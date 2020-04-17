@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Practice debugging techniques in ServiceNow</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Practice Debugging</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	try{
+		var x = 7;
+		jslogger("This message is from jslog().");
+		jslog("The value of x = " + x);
+		jslog("The NeedIt State value = " + g_form.getValue('state'));
+		jslog("The currently logged in user is " + g_user.getFullName() + ".");
+				
+ 		g_form.setValue('short_description',g_form.getValue('short_description') + " - Updated field value");
+	}
+	catch(err){
+		jslogger('A JavaScript runtime error occurred: ' + err.message);
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 00:27:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a10ddd801b101010013331d7dc4bcbdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NeedIt Practice Debugging</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_a10ddd801b101010013331d7dc4bcbdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 00:31:59</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>56f9c467db77234452cec59705961917</instance_id>
+        <instance_name>dev73699</instance_name>
+        <name>sys_script_client_a10ddd801b101010013331d7dc4bcbdc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Practice debugging techniques in ServiceNow&lt;/description&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;NeedIt Practice Debugging&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+	try{
+		var x = 7;
+		jslogger("This message is from jslog().");
+		jslog("The value of x = " + x);
+		jslog("The NeedIt State value = " + g_form.getValue('state'));
+		jslog("The currently logged in user is " + g_user.getFullName() + ".");
+				
+ 		g_form.setValue('short_description',g_form.getValue('short_description') + " - Updated field value");
+	}
+	catch(err){
+		jslogger('A JavaScript runtime error occurred: ' + err.message);
+   }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-16 00:27:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a10ddd801b101010013331d7dc4bcbdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt Practice Debugging&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a10ddd801b101010013331d7dc4bcbdc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-16 00:31:59&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1247974503</payload_hash>
+        <record_name>NeedIt Practice Debugging</record_name>
+        <reverted_from/>
+        <source>836afc0f1bc05010013331d7dc4bcb7b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 00:31:59</sys_created_on>
+        <sys_id>c2a1e9441b101010013331d7dc4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171806648e10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 00:31:59</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0ea1e944cf1010102f5376f06721b79d</update_guid>
+        <update_guid_history>0ea1e944cf1010102f5376f06721b79d:-1247974503,9190e94482101010e2a6b618b4d14184:-1400885707</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-16 02:53:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>26d8b5be0a2246a48c1420d15e1ace51</sys_id>
+        <sys_metadata>a10ddd801b101010013331d7dc4bcbdc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Practice Debugging</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">45007fcd0fa83200cd674f8ce1050ebc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_a10ddd801b101010013331d7dc4bcbdc</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a10ddd801b101010013331d7dc4bcbdc">c2a1e9441b101010013331d7dc4bcb9e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-16 02:53:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
